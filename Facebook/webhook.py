@@ -63,7 +63,7 @@ def run(main_func=None, Verify_Token=None, debug=True, app_secret_key=None):
                     calculation = Process(target=main_func(message))
                     calculation.start()
                 except:
-                    print(traceback.print_exc())
+                    print((traceback.print_exc()))
         logger.info("success")
         return "success", 200
 
